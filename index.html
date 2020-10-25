@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--titluo de la pestana -->
+
+	<title> Ignacio Landeta personal webpage </title>
+
+
+<!--JavaScript prompt box -->
+<script>
+function myPrompt()
+{
+	var person = prompt("Please enter your name");
+	if (person !="")
+	{
+		document.getElementById("test").innerHTML = "Hello " + person + "! How are you today?";
+	}
+	else
+	{
+		alert("Hey, enter your name!");
+	}
+}
+</script>
+
+
+
+<!--JavaScript alerts -->
+<script>
+function myAlertMath() {
+	var userNumber = document.getElementById("mathInput").value;
+  
+  alert("Your number x 5 is " + userNumber * 5);
+}
+</script>
+
+
+
+
+<!--JavaScript button & inputs -->
+<script type="text/javascript">
+
+function displayInput() //Esta funcion va a mostrar una version azul del nombre o texto libre ingresado
+{
+	var testInput = document.getElementById("nombre").value;
+ 
+	if (testInput.length == 0)
+ {//es bueno usar espacios como indents...
+    document.getElementById("nombrecolor").innerHTML = "Hey! no escribiste nada"
+ }
+	else
+    document.getElementById("nombrecolor").innerHTML = testInput;
+}
+
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+function addParagraphText()
+{
+	document.getElementById("javabutton").innerHTML = "Good bye!";
+	
+	}
+
+</script>
+
+</head>
+
+<body>
+<!--titluo del cuerpo ppal -->
+
+<H1 style="color:blue;">Hello World!! This is my (basic) Personal webpage <br> 
+(which I´ve hosted and developed by myself from scratch programming in HTML,CSS & JavaScript. As a hobby and first prototype...) </H1>
+
+<!--JavaScript prompt box -->
+<p> Please present yourself;</p>
+<button onclick="myPrompt()">Click me</button>
+<p id="test"></p>
+
+
+<!--imagenes e hipervinculos -->
+
+<H2> Click on the image link below to access my Linkedin; </H2>
+<a href="https://ar.linkedin.com/in/ignacio-landeta-08b05834" > <img src="ignacio.png"/> </a> 
+<img src="https://www.thirdowlconsulting.com/wp-content/uploads/2015/11/banner.jpg"/>
+<BR/>
+
+<!--tablas con bordes -->
+
+<table border="3" style="border:solid;">
+<tr>
+<td>Undergraduate degree</td><td>Industrial Engineer</td><td>UBA</td>
+</tr>
+<tr>
+<td>Master degree</td><td>Engineering Management</td><td>Ajou University</td>
+</tr>
+<tr>
+<td>Profession</td><td>Sr. Management Consultant & Project Leader</td><td>Proguide</td>
+</tr>
+
+</table>
+
+<!--descripcion gral -->
+
+<H3>  My name is Ignacio Landeta. I am an Industrial Engineer, graduated from <a href="http://www.fi.uba.ar/" > University of Buenos Aires </a> , Argentina and a <a href="https://www.facebook.com/becaroficial/posts/d41d8cd9/769134233198557/" > full schollarship Master degree from Ajou University </a>, South Korea. <br> 
+With 10+ years of experience working in industry & Consulting, with a robust track record of adding value for clients. Strong analytical, interpersonal and leadership skills, capable of operating in a changing and uncertain environment. Customer-centric with an in-depth multi-industry experie.<br> 
+
+I am a Hard working, reliable and Intellectually curious Sr. Consultant, focus on 3 important dimensions: Problem solving (good framing, solid quant, insights), Communication skills, and Team skills.<br> 
+
+Specialties: Customer/results oriented and self-motivated. Involves and commits company’s areas to reach objectives. Has a great sense to detect business opportunities. Acts in real time and overpass critical paths with creativity. I consider myself a team builder with a lead by example profile and keep collaborators motivated. High caliber presentation, negotiation and closing skills. Strong skills in relationship management and change management.
+Committed to helping clients achieve immediate impact and growing advantage on their most mission-critical issues.<br> 
+
+After some years in the industry (automotive and consumer goods), I joined Consulting to further my development and help clients with everything I'd learned along the way. I've developed technical and soft skills, enjoyed the flexibility to choose projects, and worked with amazing colleagues who have taught me how to leverage my strengths. Working in Management Consultancy means you have to pivot to a new industry, a new  challenge, and it can  feel like you’re starting your career all over again and put you back into the learning mindset you need to  succeed in a new sector. This allowed me not only gain insight into different businesses and industries, but often report directly to senior management, including the C-Suite. <br> 
+I´ve learned a lot in over four years in industry and nine years in Consulting. I worked closely with inspirational clients and had incredible sponsors and mentors -men and women- who encouraged me to take risk (and ultimately learned from them). <br> 
+
+During some projects I had the very special chance of develope a key piece of professional growth, which is most common at a company but sometimes not at consulting: learning from mistakes. Since consultants typically swoop in to offer advice and recommendations on a project, but generaly don’t stick around to see the success or failure of their ideas, they’re only seeing a part of the process. I had the chance of owning something over an extended period of time, like a few years, where I had a chance to take responsibility for one’s recommendations, where one has to see one’s recommendations through all action stages and accumulate some scar tissue for the mistakes and pick one’s self up off the ground and dust one’s self off, one learns a fraction of what one can.<br> 
+
+<em>(Paraphrasing Ernest Hemingway) I think that for a true Consultant "each project should be a new beginning, where you try again for something which is beyond attainment. You should always try for something which has never been done, or that others have failed. Then sometimes, with good luck and hard work, you and your team will succeded..."</em> <br> 
+
+Recommendations;
+-Ignacio is a management consultant with extensive project management and strategy experience. He has a strong understanding of business needs. Ignacio is passionate about getting to know clients holiatically and finding pragmatic solutions that work for them. Creative problem solver. Loves people, music, food, backpacking and staying active!<br> 	</H3>
+
+<BR/>
+<img src="background.png"/>
+<BR/>
+
+
+<!--JavaScript alerts -->
+<p> Let´s do some math...</p>
+<button onclick="alert('The test worked');">Alert Test</button>
+<input id="mathInput" type="number"/> <button onclick="myAlertMath()">Multiply x 5</button>
+<p id="test"></p>
+
+
+
+
+<!--JavaScript button & inputs -->
+<p> Let´s have some fun...</p>
+<input id="nombre" type="text"/>
+<button onclick="displayInput();"> <--Enter your name, click and color it</button>
+<p id="nombrecolor" style="color:red;"></p>
+
+<button onclick="addParagraphText ();">Click Here</button>
+<p id="javabutton"></p>
+
+
+
+
+
+
+
+<!--paraphrase -->
+
+
+<p style="color:blue;font-size:200%;"> THANK YOU FOR VISITING MY WEBPAGE! <strong> HOPE TO SEE YOU SOON... </strong> </p>
+
+</body>
+
+
+</html>
