@@ -2,13 +2,15 @@ http://ignaciolandeta.000webhostapp.com/
 https://www.coursera.org/learn/web-development
 
 
-
 <!DOCTYPE html>
 <html>
 <head>
 <!--titluo de la pestana -->
 
 	<title> Ignacio Landeta personal webpage </title>
+	
+<!--External CSS styling from a file -->
+<link rel="stylesheet" type="text/css" href="basic.css">
 
 
 <!--JavaScript prompt box -->
@@ -72,6 +74,17 @@ function addParagraphText()
 
 </script>
 
+
+<!--Internal/local CSS styles -->
+
+	<style type="text/css">
+		p.regular {color:blue;font-size:100%}
+		p.medium {color:green;font-size:150%}
+	</style>
+
+
+
+
 </head>
 
 <body>
@@ -129,12 +142,12 @@ Recommendations;
 -Ignacio is a management consultant with extensive project management and strategy experience. He has a strong understanding of business needs. Ignacio is passionate about getting to know clients holiatically and finding pragmatic solutions that work for them. Creative problem solver. Loves people, music, food, backpacking and staying active!<br> 	</H3>
 
 <BR/>
-<img src="background.png"/>
-<BR/>
 
+<!--CSS layout: imagen con texto alineado "float:left"-->
+<img style="float:left;" src="background.png"/>
 
-<!--JavaScript alerts -->
-<p> Let´s do some math...</p>
+<!--JavaScript alerts + Internal CSS style-->
+<p class="regular"> Let´s do some math...</p>
 <button onclick="alert('The test worked');">Alert Test</button>
 <input id="mathInput" type="number"/> <button onclick="myAlertMath()">Multiply x 5</button>
 <p id="test"></p>
@@ -142,8 +155,8 @@ Recommendations;
 
 
 
-<!--JavaScript button & inputs -->
-<p> Let´s have some fun...</p>
+<!--JavaScript button & inputs + Internal CSS style-->
+<p class="testClass"> Let´s have some fun...</p>
 <input id="nombre" type="text"/>
 <button onclick="displayInput();"> <--Enter your name, click and color it</button>
 <p id="nombrecolor" style="color:red;"></p>
