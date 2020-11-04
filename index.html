@@ -164,11 +164,42 @@ Recommendations;
 <button onclick="addParagraphText ();">Click Here</button>
 <p id="javabutton"></p>
 
+<p style="color:grey;font-size:100%;"> Please fill in the Form in case you want to: </p>
 
+<!--HTML Forms -->
 
+<form>
+	First Name:<br>
+	<input type="text" name="firstname" required><br>
+	Last Name:<br>
+	<input type="text" name="lastname" value="enter your lastname"><br>
+	Secret Word in case you want to share it with me...:<br>
+	<input type="password" name="password"><br>
+	
+	Select your favourite consulting service:<br>
+	<input type="radio" name="consulting" value="Strategy" checked>Strategy<br>
+	<input type="radio" name="consulting" value="BPO">BPO<br>
+	<input type="radio" name="consulting" value="Finance">Finance<br>
 
+	Wich are your main skills?;<br>
+	<input type="checkbox" name="skills" value="engineering">Engineering<br>
+	<input type="checkbox" name="skills" value="economics">Economics<br>
+	<input type="checkbox" name="skills" value="pm">Project Management<br>
+	<input type="checkbox" name="skills" value="others">Others<br>
 
+	Numbers says a lot..Wich is your favourite?
+	<input type="number" name="quantity" min="1" max="10"><br>
+	
+	Birthday;
+	<input type="date" name="birthday"><br>
+	
+	Your favourite color;
+	<input type="color" name="favcolor"><br>
+	
+	
+		<input type="submit" value="Submit">
 
+</form>
 
 <!--paraphrase -->
 
